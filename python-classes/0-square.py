@@ -2,6 +2,8 @@
 """
 Python excercise 0
 """
+
+
 class Square:
     """
     empty class Square
