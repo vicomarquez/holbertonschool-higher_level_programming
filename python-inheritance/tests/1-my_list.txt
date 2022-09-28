@@ -10,8 +10,6 @@ Test cases for 1-my_list.py
 >>> print(my_list)
 []
 
-
->>>
 >>> my_list.append(4)
 >>> my_list.append(3)
 >>> print(my_list)
@@ -19,9 +17,9 @@ Test cases for 1-my_list.py
 >>> my_list.print_sorted()
 [3, 4]
 
->>> my_list.append(-4)
+>>> my_list.append(-5)
 >>> my_list.print_sorted()
-[-4, 1, 2]
+[-5, 1, 2]
 
 >>> my_list = MyList([4, 2, 3])
 >>> new_list = my_list.print_sorted()
