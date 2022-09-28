@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-10-module
+11-module
 """
 
 
@@ -21,3 +21,9 @@ class Square(Rectangle):
         calculates area
         """
         return self.__size * self.__size
+
+    def __str__(self):
+        """
+        returns description
+        """
+        return "[Square] {}/{}".format(self.__width, self.__height)
