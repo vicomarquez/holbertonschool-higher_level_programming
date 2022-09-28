@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""
-7-module
-"""
 
 
-BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class BaseGeometry:
+class Rectangle(BaseGeometry):
     """
     empty class BaseGeometry
     """
