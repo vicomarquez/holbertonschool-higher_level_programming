@@ -16,5 +16,12 @@ class Student:
         """
         retrieves a dictionary representation of a Student instance
         """
-        if type(attrs) is list
-        return self.__dict__
+        new = {}
+        if type(attrs) is list:
+            for x in self.__dict__:
+                for y in attrs:
+                    if x == y:
+                        new[x] = self.__dict__[x]
+            return new
+        else:
+            return self.__dict__
