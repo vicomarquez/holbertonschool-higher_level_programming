@@ -72,3 +72,7 @@ class Rectangle(Base):
             print()
         for y in range(self.__height):
             print(" " * self.__x + "#" * self.__width)
+
+    def __str__(self):
+        """returns rectangle description"""
+        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id, self.x, self.y, self.width, self.height))
