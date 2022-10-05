@@ -12,7 +12,6 @@ class Square(Rectangle):
         self.size = size
         super().__init__(size, size, x, y, id)
 
-
     def __str__(self):
         """returns square description"""
         a = self.id
