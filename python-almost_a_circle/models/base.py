@@ -25,7 +25,7 @@ class Base:
             list_dictionaries = []
         return json.dumps(list_dictionaries)
 
-    @classmethod
+    @staticmethod
     def save_to_file(cls, list_objs):
         new_list = []
         if list_objs is None:
