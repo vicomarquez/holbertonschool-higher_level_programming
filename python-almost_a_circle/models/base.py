@@ -55,10 +55,10 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        file_n = cls.__name__ + ".json"
         new_list = []
-        if file_n is None:
+        try:
+            with open(cls.__name__ + ".json", "r", encoding="utf=8") as f:
+                x = cls.from_json_string(f.read())
+            return  [cls.create(**y) for y in x]
+        except Exception:
             return new_list
-        with open(file_n, "r", encoding="utf=8") as f:
-            x = cls.from_json_string(f.read())
-        return  [cls.create(**y) for y in x]
