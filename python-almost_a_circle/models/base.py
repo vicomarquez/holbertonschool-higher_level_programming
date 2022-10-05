@@ -59,6 +59,6 @@ class Base:
         try:
             with open(cls.__name__ + ".json", "r", encoding="utf=8") as f:
                 x = cls.from_json_string(f.read())
-            return  [cls.create(**y) for y in x]
+            return [cls.create(**y) for y in x]
         except Exception:
             return new_list
