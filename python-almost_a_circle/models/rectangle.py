@@ -75,4 +75,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns rectangle description"""
-        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id, self.x, self.y, self.width, self.height))
+        zid = self.id
+        zx = self.x
+        zy = self.y
+        zwidth = self.width
+        zheight = self.height
+        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(zid, zx, zy, zwidth, zheight))
