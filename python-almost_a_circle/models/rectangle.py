@@ -82,7 +82,7 @@ class Rectangle(Base):
         e = self.height
         return ("[Rectangle] ({:d}) {}/{} - {:d}/{:d}".format(a, b, c, d, e))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
         if args:
             for i in range(len(args)):
@@ -96,3 +96,15 @@ class Rectangle(Base):
                     self.x = args[3]
                 if i == 4:
                     self.y = args[4]
+        else:
+            for keyword in kwargs:
+                if keyword == "id":
+                    self.id = (kwargs[keyword])
+                if keyword == "width":
+                    self.width = (kwargs[keyword])
+                if keyword == "height":
+                    self.height = (kwargs[keyword])
+                if keyword == "y":
+                    self.y = (kwargs[keyword])
+                if keyword == "x":
+                    self.x = (kwargs[keyword])
