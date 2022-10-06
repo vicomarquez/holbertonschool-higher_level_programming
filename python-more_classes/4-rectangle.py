@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-rectangle module
-"""
+"""rectangle module"""
 
 
 class Rectangle:
@@ -63,4 +61,5 @@ class Rectangle:
         return new[:-1]
 
     def __repr__(self):
+        """returns a string representation"""
         return ("Rectangle ({:d}, {:d})".format(self.__width, self._height)
