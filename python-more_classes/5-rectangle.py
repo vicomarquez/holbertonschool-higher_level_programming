@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module 4-my rectangle. Defines a rectangle """
+""" Module 5-my rectangle. Defines a rectangle """
 
 
 class Rectangle:
@@ -63,3 +63,6 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __del__(self):
+        print("Bye rectangle...")
