@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-my rectangle module
+My rectangle module
+Defines a rectangle
 """
 
 
