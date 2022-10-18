@@ -53,7 +53,18 @@ class Rectangle:
         return ((2 * self.__height) + (2 * self.__width))
 
     def __str__(self):
+<<<<<<< HEAD
         if self.__width == 0 or self.__height == 0:
             return ("")
         for i in range(self.__height):
 
+=======
+        new = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        for i in range(self.__height):
+            for x in range(self.__width):
+                new += "#"
+            new += "\n"
+        return new[:-1]
+>>>>>>> 48140fc0322b357e79dc82b46ca3563a6b2aaecf

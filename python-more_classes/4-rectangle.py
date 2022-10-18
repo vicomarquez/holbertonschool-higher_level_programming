@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
 """
 rectangle module
 """
 
 
-    class Rectangle:
+class Rectangle:
     """
     class Rectangle that defines a rectangle
     """
@@ -51,9 +52,15 @@ rectangle module
         if self.__width == 0 or self.__height == 0:
             return 0
         return ((2 * self.__height) + (2 * self.__width))
+    
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ("")
+
+    def __str__(self):
+        new = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
         for i in range(self.__height):
             for x in range(self.__width):
                 new += "#"
@@ -61,4 +68,5 @@ rectangle module
         return new[:-1]
 
     def __repr__(self):
-        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
+        """returns a string representation"""
+        return ("Rectangle ({:d}, {:d})".format(self.__width, self.__height))
