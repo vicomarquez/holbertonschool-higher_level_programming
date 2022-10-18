@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
+
 my rectangle module
+
 """
 
 
@@ -9,6 +11,7 @@ class Rectangle:
     class Rectangle that defines a rectangle
     """
     def __init__(self, width=0, height=0):
+        """init rectangle"""
         if type(width) != int:
             raise TypeError("width must be an integer")
         if type(height) != int:
