@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module 7-my rectangle. Defines a rectangle """
+""" Module 8-my rectangle. Defines a rectangle """
 
 
 class Rectangle:
