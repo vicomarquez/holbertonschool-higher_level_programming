@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 
 """
 rectangle module
 """
+=======
+""" Module 4-my rectangle. Defines a rectangle """
+>>>>>>> 0e95f67e0eb66e7716b5173b653b592587216074
 
 
 class Rectangle:
@@ -10,6 +14,7 @@ class Rectangle:
     class Rectangle that defines a rectangle
     """
     def __init__(self, width=0, height=0):
+        """init rectangle"""
         if type(width) != int:
             raise TypeError("width must be an integer")
         if type(height) != int:
@@ -68,5 +73,9 @@ class Rectangle:
         return new[:-1]
 
     def __repr__(self):
+<<<<<<< HEAD
         """returns a string representation"""
         return ("Rectangle ({:d}, {:d})".format(self.__width, self.__height))
+=======
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+>>>>>>> 0e95f67e0eb66e7716b5173b653b592587216074

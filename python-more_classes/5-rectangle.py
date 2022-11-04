@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-rectangle module
-"""
+""" Module 5-my rectangle. Defines a rectangle """
 
 
 class Rectangle:
@@ -9,6 +7,7 @@ class Rectangle:
     class Rectangle that defines a rectangle
     """
     def __init__(self, width=0, height=0):
+        """init rectangle"""
         if type(width) != int:
             raise TypeError("width must be an integer")
         if type(height) != int:
@@ -53,12 +52,6 @@ class Rectangle:
         return ((2 * self.__height) + (2 * self.__width))
 
     def __str__(self):
-<<<<<<< HEAD
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-        for i in range(self.__height):
-
-=======
         new = ""
         if self.__height == 0 or self.__width == 0:
             return ""
@@ -66,9 +59,10 @@ class Rectangle:
             for x in range(self.__width):
                 new += "#"
             new += "\n"
-<<<<<<< HEAD
         return new[:-1]
->>>>>>> 48140fc0322b357e79dc82b46ca3563a6b2aaecf
-=======
-        return new[:-1]
->>>>>>> 0e95f67e0eb66e7716b5173b653b592587216074
+
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __del__(self):
+        print("Bye rectangle...")
