@@ -5,7 +5,11 @@
 import MySQLdb
 import sys
 
-connector = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1] ,passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
+connector = MySQLdb.connect(host="localhost",
+        port=3306, user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
+        charset="utf8")
 
 cur = connector.cursor()
 cur.execute("SELECT * FROM states ORDER BY id ASC")
