@@ -18,3 +18,5 @@ for row in query_rows:
     print(row)
 cur.close()
 connector.close()
+
+if __name__ == "__main__":
