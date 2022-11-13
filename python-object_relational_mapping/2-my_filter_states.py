@@ -15,7 +15,7 @@ if __name__ == "__main__":
     cur = connector.cursor()
 
     cur.execute(
-            "SELECT * FROM states WHERE NAME LIKE BINARY='{}'"
+            "SELECT * FROM states WHERE NAME LIKE BINARY '{}'"
             .format(argv[4]))
 
     for row in cur.fetchall():
