@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     cur = connector.cursor()
 
-    cur.execute("SELECT * FROM states WHERE NAME LIKE 'N%'")
+    cur.execute("SELECT * FROM states WHERE NAME LIKE 'N%' OR NAME LIKE 'n'")
 
     for row in cur.fetchall():
         print(row)
