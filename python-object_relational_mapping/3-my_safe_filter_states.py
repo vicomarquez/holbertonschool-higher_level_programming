@@ -14,9 +14,7 @@ if __name__ == "__main__":
 
     cur = connector.cursor()
 
-    cur.execute(
-            "SELECT * FROM states WHERE name=%s ORDER BY states.id"
-            .format(argv[4]))
+    cur.execute("SELECT * FROM states WHERE name=%s", (argv[4]))
 
     for row in cur.fetchall():
         print(row)
