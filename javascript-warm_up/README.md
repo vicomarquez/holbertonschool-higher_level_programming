@@ -1,1 +1,0 @@
-Hi! here you will find JavaScript info!
