@@ -16,6 +16,6 @@ request(process.argv[2], function (error, resp, body) {
         counter++;
       }
     }
+    console.log(counter);
   }
-  console.log(counter);
 });
